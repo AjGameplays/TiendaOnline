@@ -1,4 +1,4 @@
-# Jaque Mate
+# Chesssis
 
 Tienda estática de objetos de ajedrez, inspirada en la composición editorial de tiendas de autor.
 
