@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jaque Mate: piezas, tableros y objetos para vivir el ajedrez todos los días.">
+  <title>Jaque Mate | Tienda de ajedrez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home-page">
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Jaque Mate, inicio"><span class="brand-mark">♞</span><span>JAQUE<br><em>MATE</em></span></a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="index.html" aria-current="page">Inicio</a>
+      <a href="tienda.html">Tienda</a>
+      <a href="#clases">Clases</a>
+      <a href="#momentos">Torneos</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#historia">Acerca de</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="searchToggle" type="button" aria-label="Abrir búsqueda">⌕</button>
+      <button class="cart-button" id="cartToggle" type="button" aria-label="Abrir carrito">Carrito <span id="cartCount">0</span></button>
+      <button class="menu-button" id="menuToggle" type="button" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Una comunidad alrededor del tablero</p>
+        <h1 id="hero-title">El ajedrez<br><span>se vive</span> aquí.</h1>
+        <p class="hero-text">Clases individuales, encuentros, torneos y objetos con carácter para quienes saben que cada movimiento cuenta.</p>
+        <a class="button button-light" href="#clases">Conocer la propuesta <span>↘</span></a>
+      </div>
+      <div class="hero-board-wrap" aria-label="Tablero de ajedrez decorativo">
+        <div class="hero-note">EST. 2018<br>BUENOS AIRES</div>
+        <div class="hero-board">
+          <div class="board-coordinates board-files"><span>a</span><span>b</span><span>c</span><span>d</span><span>e</span><span>f</span><span>g</span><span>h</span></div>
+          <div class="board-grid" aria-hidden="true"></div>
+          <div class="hero-piece piece-one">♛</div><div class="hero-piece piece-two">♟</div><div class="hero-piece piece-three">♜</div>
+        </div>
+        <div class="hero-caption">LA PARTIDA<br>ES AHORA</div>
+      </div>
+      <div class="hero-stamp">♞<small>CHESS<br>OBJECTS</small></div>
+    </section>
+
+    <section class="ticker" aria-label="Noticias de la tienda"><span>NUEVA COLECCIÓN</span><span>ENVÍOS A TODO EL PAÍS</span><span>HECHO PARA JUGADORES</span><span>NUEVA COLECCIÓN</span><span>ENVÍOS A TODO EL PAÍS</span></section>
+
+    <section class="shop-section" id="tienda" aria-labelledby="shop-title">
+      <div class="section-heading"><div><p class="eyebrow">La colección</p><h2 id="shop-title">Elige tu<br><i>posición.</i></h2></div><p class="section-intro">Diseñamos piezas que hacen que tu amor por el tablero se note incluso cuando la partida termina.</p></div>
+      <div class="shop-toolbar">
+        <div class="filter-list" role="group" aria-label="Filtrar por categoría">
+          <button class="filter active" data-filter="all" type="button">Todo <sup>06</sup></button>
+          <button class="filter" data-filter="tableros" type="button">Tableros <sup>02</sup></button>
+          <button class="filter" data-filter="piezas" type="button">Piezas <sup>02</sup></button>
+          <button class="filter" data-filter="objetos" type="button">Objetos <sup>02</sup></button>
+        </div>
+        <label class="search-box" for="productSearch"><span>⌕</span><input id="productSearch" type="search" placeholder="Buscar en la colección..." autocomplete="off"></label>
+      </div>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card featured" data-category="tableros" data-name="tablero campo claro">
+          <div class="product-image image-board"><span class="product-tag">Favorito</span><div class="mini-board"></div><span class="image-label">JM / 01</span></div><div class="product-meta"><div><h3>Tablero Campo Claro</h3><p>Roble y nogal · 40 × 40 cm</p></div><strong>$ 86.000</strong></div><button class="add-button" data-product="Tablero Campo Claro" data-price="86000" type="button">Añadir al carrito <span>+</span></button>
+        </article>
+        <article class="product-card" data-category="piezas" data-name="set piezas noche">
+          <div class="product-image image-night"><span class="image-label">JM / 02</span><div class="chess-shape">♞</div></div><div class="product-meta"><div><h3>Set Piezas Noche</h3><p>Acacia teñida · 32 piezas</p></div><strong>$ 119.000</strong></div><button class="add-button" data-product="Set Piezas Noche" data-price="119000" type="button">Añadir al carrito <span>+</span></button>
+        </article>
+        <article class="product-card" data-category="objetos" data-name="taza gambito">
+          <div class="product-image image-mug"><span class="product-tag dark">Nuevo</span><span class="image-label">JM / 03</span><div class="mug">♟</div></div><div class="product-meta"><div><h3>Taza Gambito</h3><p>Cerámica esmaltada · 350 ml</p></div><strong>$ 18.500</strong></div><button class="add-button" data-product="Taza Gambito" data-price="18500" type="button">Añadir al carrito <span>+</span></button>
+        </article>
+        <article class="product-card" data-category="tableros" data-name="tablero magnético viaje">
+          <div class="product-image image-travel"><span class="image-label">JM / 04</span><div class="travel-board"></div></div><div class="product-meta"><div><h3>Tablero de Viaje</h3><p>Imantado · Plegable · 25 cm</p></div><strong>$ 42.000</strong></div><button class="add-button" data-product="Tablero de Viaje" data-price="42000" type="button">Añadir al carrito <span>+</span></button>
+        </article>
+        <article class="product-card" data-category="piezas" data-name="reina escultura">
+          <div class="product-image image-sculpture"><span class="image-label">JM / 05</span><div class="sculpture">♛</div></div><div class="product-meta"><div><h3>La Reina</h3><p>Escultura de cerámica · 18 cm</p></div><strong>$ 36.000</strong></div><button class="add-button" data-product="La Reina" data-price="36000" type="button">Añadir al carrito <span>+</span></button>
+        </article>
+        <article class="product-card" data-category="objetos" data-name="gorra jaque mate">
+          <div class="product-image image-cap"><span class="image-label">JM / 06</span><div class="cap">JM</div></div><div class="product-meta"><div><h3>Gorra Jaque Mate</h3><p>Gabardina de algodón · Bordada</p></div><strong>$ 24.000</strong></div><button class="add-button" data-product="Gorra Jaque Mate" data-price="24000" type="button">Añadir al carrito <span>+</span></button>
+        </article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>No encontramos esa jugada. Prueba con otra búsqueda.</p>
+    </section>
+
+    <section class="classes-section" id="clases" aria-labelledby="classes-title"><div class="section-heading"><div><p class="eyebrow">Aprende a jugar mejor</p><h2 id="classes-title">Tu partida,<br><em>a tu ritmo.</em></h2></div><p class="section-intro">Clases individuales, uno a uno, para empezar desde cero, mejorar tu estrategia o preparar tu próximo torneo con acompañamiento real.</p></div><div class="class-grid"><article class="class-card class-online"><div class="class-number">01</div><div><p class="eyebrow">Sesión individual · Desde cualquier lugar</p><h3>Clases online</h3><p>Encuentros uno a uno por videollamada, análisis de tus partidas y ejercicios pensados para tu nivel.</p><a class="text-link" href="https://wa.me/5491100000000?text=Hola%2C%20quiero%20consultar%20por%20las%20clases%20online%20individuales" target="_blank" rel="noreferrer">Consultar horarios <span>↗</span></a></div></article><article class="class-card class-presential"><div class="class-number">02</div><div><p class="eyebrow">Sesión individual · A domicilio</p><h3>Clases presenciales</h3><p>Un encuentro uno a uno en tu domicilio, con atención personalizada y ejercicios adaptados a tu nivel.</p><a class="text-link" href="https://wa.me/5491100000000?text=Hola%2C%20quiero%20consultar%20por%20las%20clases%20presenciales%20individuales" target="_blank" rel="noreferrer">Quiero sumarme <span>↗</span></a></div></article></div></section>
+    <section class="manifesto" id="historia"><div class="manifesto-symbol">♞</div><p class="eyebrow">La casa del juego lento</p><h2>El ajedrez no es<br>solo un juego.<br><em>Es una forma de mirar.</em></h2><a class="text-link" href="#historia-detalle">Conocer nuestra historia <span>↘</span></a></section>
+    <section class="story-section" id="historia-detalle" aria-labelledby="story-title"><div class="story-sign">2018<br>—<br>2024</div><div><p class="eyebrow">Nuestra historia</p><h2 id="story-title">Una mesa.<br>Dos colores.<br><em>Mil partidas.</em></h2></div><div class="story-copy"><p>Jaque Mate nació de una idea sencilla: acercar el ajedrez a la vida cotidiana. Empezamos compartiendo partidas en una mesa de barrio y terminamos creando objetos, encuentros y una comunidad alrededor del tablero.</p><p>Hoy seguimos defendiendo el juego pensado, la conversación sin apuro y la alegría de aprender algo nuevo en cada movimiento.</p></div></section>
+    <section class="moments-section" id="momentos" aria-labelledby="moments-title"><div class="section-heading"><div><p class="eyebrow">La partida continúa</p><h2 id="moments-title">Momentos<br><em>en juego.</em></h2></div><p class="section-intro">Así se vive el ajedrez cuando salimos de la pantalla: torneos, encuentros y muchas historias alrededor del tablero.</p></div><div class="gallery-grid"><figure class="gallery-item gallery-large"><img src="https://images.unsplash.com/photo-1586165368502-1badb1b5c5d9?auto=format&fit=crop&w=1200&q=85" alt="Jugadores concentrados durante una partida de ajedrez"><figcaption><span>01 / Encuentro</span><strong>La mesa se comparte</strong></figcaption></figure><figure class="gallery-item gallery-small"><img src="https://images.unsplash.com/photo-1560174038-da43ac74f01b?auto=format&fit=crop&w=900&q=85" alt="Piezas de ajedrez sobre un tablero"><figcaption><span>02 / Detalle</span><strong>Cada pieza cuenta</strong></figcaption></figure><figure class="gallery-item gallery-small"><img src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&w=900&q=85" alt="Tablero de ajedrez preparado para una partida"><figcaption><span>03 / Torneo</span><strong>El reloj empieza</strong></figcaption></figure><a class="video-card" href="https://www.youtube.com/results?search_query=torneo+de+ajedrez" target="_blank" rel="noreferrer"><span class="play-icon">▶</span><span class="eyebrow">Video de torneos</span><strong>Ver la partida<br>en movimiento <span>↗</span></strong></a></div></section>
+    <section class="contact-section" id="contacto"><div><p class="eyebrow">¿Tienes una idea?</p><h2>Hagámosla<br><em>real.</em></h2></div><div><p>Diseñamos tableros, piezas y objetos especiales para clubes, marcas y personas que quieren jugar una partida única.</p><a class="button button-dark" id="contactWhatsapp" href="https://wa.me/5491100000000" target="_blank" rel="noreferrer">Escribir por WhatsApp <span>↗</span></a></div></section>
+  </main>
+
+  <aside class="cart-panel" id="cartPanel" aria-label="Pedido por WhatsApp" aria-hidden="true"><div class="cart-header"><h2>Tu pedido</h2><button id="cartClose" type="button" aria-label="Cerrar pedido">×</button></div><div class="cart-items" id="cartItems"><p class="cart-empty">Tu pedido está vacío.<br>La mejor jugada todavía no llegó.</p></div><div class="cart-footer"><div><span>Total estimado</span><strong id="cartTotal">$ 0</strong></div><button class="button button-dark whatsapp-button" type="button">Pedir por WhatsApp <span>↗</span></button></div></aside>
+  <div class="overlay" id="overlay"></div>
+  <footer><span>© 2024 Jaque Mate</span><span>Hecho con paciencia y estrategia.</span><a href="#inicio">Volver arriba ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>

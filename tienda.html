@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tienda Jaque Mate: tableros, piezas y objetos para vivir el ajedrez.">
+  <title>Tienda | Jaque Mate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="store-page">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Jaque Mate, inicio"><span class="brand-mark">♞</span><span>JAQUE<br><em>MATE</em></span></a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a>
+      <a href="tienda.html" aria-current="page">Tienda</a>
+      <a href="index.html#clases">Clases</a>
+      <a href="index.html#momentos">Torneos</a>
+      <a href="index.html#contacto">Contacto</a>
+      <a href="index.html#historia">Acerca de</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="searchToggle" type="button" aria-label="Buscar productos">⌕</button>
+      <button class="cart-button" id="cartToggle" type="button" aria-label="Abrir pedido">Pedido <span id="cartCount">0</span></button>
+      <button class="menu-button" id="menuToggle" type="button" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="store-intro"><p class="eyebrow">La tienda Jaque Mate</p><h1>Objetos para<br><em>jugar mejor.</em></h1><p>Elige tu tablero, tus piezas o ese objeto que te acompaña fuera de la partida. No cobramos desde aquí: armamos tu pedido y lo coordinamos por WhatsApp.</p></section>
+    <section class="shop-section" id="tienda" aria-labelledby="shop-title">
+      <div class="section-heading"><div><p class="eyebrow">La colección</p><h2 id="shop-title">Elige tu<br><i>posición.</i></h2></div><p class="section-intro">Diseñamos piezas que hacen que tu amor por el tablero se note incluso cuando la partida termina.</p></div>
+      <div class="shop-toolbar">
+        <div class="filter-list" role="group" aria-label="Filtrar por categoría">
+          <button class="filter active" data-filter="all" type="button">Todo <sup>06</sup></button>
+          <button class="filter" data-filter="tableros" type="button">Tableros <sup>02</sup></button>
+          <button class="filter" data-filter="piezas" type="button">Piezas <sup>02</sup></button>
+          <button class="filter" data-filter="objetos" type="button">Objetos <sup>02</sup></button>
+        </div>
+        <label class="search-box" for="productSearch"><span>⌕</span><input id="productSearch" type="search" placeholder="Buscar en la colección..." autocomplete="off"></label>
+      </div>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card featured" data-category="tableros" data-name="tablero campo claro">
+          <div class="product-image image-board"><span class="product-tag">Favorito</span><div class="mini-board"></div><span class="image-label">JM / 01</span></div><div class="product-meta"><div><h3>Tablero Campo Claro</h3><p>Roble y nogal · 40 × 40 cm</p></div><strong>$ 86.000</strong></div><button class="add-button" data-product="Tablero Campo Claro" data-price="86000" type="button">Añadir al pedido <span>+</span></button>
+        </article>
+        <article class="product-card" data-category="piezas" data-name="set piezas noche">
+          <div class="product-image image-night"><span class="image-label">JM / 02</span><div class="chess-shape">♞</div></div><div class="product-meta"><div><h3>Set Piezas Noche</h3><p>Acacia teñida · 32 piezas</p></div><strong>$ 119.000</strong></div><button class="add-button" data-product="Set Piezas Noche" data-price="119000" type="button">Añadir al pedido <span>+</span></button>
+        </article>
+        <article class="product-card" data-category="objetos" data-name="taza gambito">
+          <div class="product-image image-mug"><span class="product-tag dark">Nuevo</span><span class="image-label">JM / 03</span><div class="mug">♟</div></div><div class="product-meta"><div><h3>Taza Gambito</h3><p>Cerámica esmaltada · 350 ml</p></div><strong>$ 18.500</strong></div><button class="add-button" data-product="Taza Gambito" data-price="18500" type="button">Añadir al pedido <span>+</span></button>
+        </article>
+        <article class="product-card" data-category="tableros" data-name="tablero magnético viaje">
+          <div class="product-image image-travel"><span class="image-label">JM / 04</span><div class="travel-board"></div></div><div class="product-meta"><div><h3>Tablero de Viaje</h3><p>Imantado · Plegable · 25 cm</p></div><strong>$ 42.000</strong></div><button class="add-button" data-product="Tablero de Viaje" data-price="42000" type="button">Añadir al pedido <span>+</span></button>
+        </article>
+        <article class="product-card" data-category="piezas" data-name="reina escultura">
+          <div class="product-image image-sculpture"><span class="image-label">JM / 05</span><div class="sculpture">♛</div></div><div class="product-meta"><div><h3>La Reina</h3><p>Escultura de cerámica · 18 cm</p></div><strong>$ 36.000</strong></div><button class="add-button" data-product="La Reina" data-price="36000" type="button">Añadir al pedido <span>+</span></button>
+        </article>
+        <article class="product-card" data-category="objetos" data-name="gorra jaque mate">
+          <div class="product-image image-cap"><span class="image-label">JM / 06</span><div class="cap">JM</div></div><div class="product-meta"><div><h3>Gorra Jaque Mate</h3><p>Gabardina de algodón · Bordada</p></div><strong>$ 24.000</strong></div><button class="add-button" data-product="Gorra Jaque Mate" data-price="24000" type="button">Añadir al pedido <span>+</span></button>
+        </article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>No encontramos esa jugada. Prueba con otra búsqueda.</p>
+    </section>
+  </main>
+
+  <aside class="cart-panel" id="cartPanel" aria-label="Pedido por WhatsApp" aria-hidden="true"><div class="cart-header"><h2>Tu pedido</h2><button id="cartClose" type="button" aria-label="Cerrar pedido">×</button></div><div class="cart-items" id="cartItems"><p class="cart-empty">Tu pedido está vacío.<br>La mejor jugada todavía no llegó.</p></div><div class="cart-footer"><div><span>Total estimado</span><strong id="cartTotal">$ 0</strong></div><button class="button button-dark whatsapp-button" type="button">Pedir por WhatsApp <span>↗</span></button></div></aside>
+  <div class="overlay" id="overlay"></div>
+  <footer><span>© 2024 Jaque Mate</span><span>Pedidos coordinados por WhatsApp.</span><a href="index.html">Volver al inicio ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
