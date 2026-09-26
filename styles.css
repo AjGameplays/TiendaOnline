@@ -1,10 +1,11 @@
+@font-face{font-family:'ChessPieces';src:url('Chess-7.TTF') format('truetype');font-display:swap}
 .main-nav{font-size:16px!important;gap:18px}
 @media(max-width:760px){.main-nav{gap:14px}}
 .main-nav{font-size:15px!important;gap:24px}
 @media(max-width:760px){.main-nav{gap:16px}}
 .main-nav{font-size:14px!important;gap:30px}
 @media(max-width:760px){.main-nav{gap:18px}}
-.brand-name{position:relative;left:-30px!important}
+.brand-name{position:relative;left:-30px!important}.queen-letter{display:inline-block;font-family:'ChessPieces',sans-serif;font-size:1.12em;line-height:.8;transform:translateY(.04em)}
 @media(max-width:760px){.brand-name{left:-18px!important}}
 .brand-logo{margin-right:-24px!important}
 @media(max-width:760px){.brand-logo{margin-right:-15px!important}}
